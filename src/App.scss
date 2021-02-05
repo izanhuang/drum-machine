@@ -1,26 +1,35 @@
-$pastelRed: #FF9AA2;
-$pastelOrange: #FFDAC1;
-$pastelPurple: #B49FDC;
-$pastelBlue: #C5EBFE;
-$pastelYellow: #FEFD97;
-$pastelGreen: #A5F8CE;
-$pastelPink: #F197C0;
-
-#drum-machine{
-    border: 1px solid black;
-    #display {
-        border: 1px solid red;
+#drum-machine {
+    height: 100vh;
+    background-color: gray;
+    #drum-machine-display {
+        padding-top: 100px;
+        width: 1000px;
+        margin-left: 25%;
+        height: auto;
     }
 }
 
-.button-div{
-    border: 1px solid blue;
-    display: flex;
-    flex-direction: column;
-}
- button {
-    display: inline-block;
+button {
     font-size: 100px;
+    width: 100px;
+    height: 100px;
+    box-shadow: 2px 2px 2px black;
+}
+
+.button-div {
+    margin-top: 15px;
+}
+
+#soundName {
+    width: 200px;
+    text-align: center;
+    margin-top: 25%;   
     width: 150px;
+    height: 50px;
+    padding-top: 13px;
+    background-color: #0275d8;
+    font-weight: bold;
+    color: white;
+
 }
 

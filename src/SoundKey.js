@@ -10,8 +10,7 @@ export default class SoundKey extends Component {
     }
 
     handleClick(event) {
-        const soundToPlay = document.getElementById(this.props.link)
-        soundToPlay.load();
+        const soundToPlay = document.getElementById(this.props.keyCharacter)
         soundToPlay.play();
         this.props.onChange(this.props.name);
     }
@@ -19,10 +18,10 @@ export default class SoundKey extends Component {
     render() {
         return (
             <div className="button-div">
-                <Button onClick={event => this.handleClick(event)}>
+                <Button className="drum-pad" id={this.props.id} onClick={event => this.handleClick(event)} size="lg">
                     {this.props.keyCharacter}
-                    <audio className="clip" id={this.props.link}>
-                        <source src={this.props.link}></source>
+                    <audio className="clip" id={this.props.keyCharacter} src={this.props.link}>
+                    
                     </audio>
                 </Button>
             </div>
