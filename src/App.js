@@ -1,5 +1,5 @@
-import './App.css';
 import DrumMachine from './DrumMachine';
+import './App.scss';
 
 function App() {
   return (

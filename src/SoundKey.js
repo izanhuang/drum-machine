@@ -1,10 +1,10 @@
 import React, { Component } from 'react'
+import Button from 'react-bootstrap/Button';
 
 export default class SoundKey extends Component {
     constructor(props){
         super(props);
         this.state = {
-            clicked: false
         }
         this.handleClick = this.handleClick.bind(this)
     }
@@ -12,21 +12,19 @@ export default class SoundKey extends Component {
     handleClick(event) {
         const soundToPlay = document.getElementById(this.props.link)
         soundToPlay.load();
-        soundToPlay.play()
-        this.setState({
-            clicked: true
-        })
+        soundToPlay.play();
+        this.props.onChange(this.props.name);
     }
     
     render() {
         return (
-            <div>
-                <button onClick={event => this.handleClick(event)}>
+            <div className="button-div">
+                <Button onClick={event => this.handleClick(event)}>
                     {this.props.keyCharacter}
-                    <audio className="audio-element" id={this.props.link}>
+                    <audio className="clip" id={this.props.link}>
                         <source src={this.props.link}></source>
                     </audio>
-                </button>
+                </Button>
             </div>
         )
     }

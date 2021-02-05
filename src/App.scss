@@ -1,0 +1,26 @@
+$pastelRed: #FF9AA2;
+$pastelOrange: #FFDAC1;
+$pastelPurple: #B49FDC;
+$pastelBlue: #C5EBFE;
+$pastelYellow: #FEFD97;
+$pastelGreen: #A5F8CE;
+$pastelPink: #F197C0;
+
+#drum-machine{
+    border: 1px solid black;
+    #display {
+        border: 1px solid red;
+    }
+}
+
+.button-div{
+    border: 1px solid blue;
+    display: flex;
+    flex-direction: column;
+}
+ button {
+    display: inline-block;
+    font-size: 100px;
+    width: 150px;
+}
+
