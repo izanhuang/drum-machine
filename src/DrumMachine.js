@@ -58,7 +58,6 @@ export default class DrumMachine extends Component {
     }
 
     render() {
-        const {clicked} = this.state;
         return (
             <div id="drum-machine" onKeyDown={this.handleKeyPress}>
                 <div id="drum-machine-display">
