@@ -1,7 +1,7 @@
 # Drum Machine
 A simple and convenient drum machine webpage.
 
-Check it out at https://izanhuang.github.io/drum-machine/
+Check out this website at https://izanhuang.github.io/drum-machine/
 
 # Getting Started with Create React App
 
